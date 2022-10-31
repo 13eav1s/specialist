@@ -1,11 +1,12 @@
 from itertools import combinations
+from typing import List
 
 
-def path_length(a: dict, b: dict):
+def path_length(a: dict, b: dict) -> float:
     return ((b['x'] - a['x']) ** 2 + (b['y'] - a['y']) ** 2) ** 0.5
 
 
-def solution(arr):
+def solution(arr: List[dict]) -> float:
     points = ''
     for i in range(len(arr)):
         points += str(i)
